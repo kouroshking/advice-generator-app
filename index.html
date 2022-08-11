@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Advice generator app</title>
+
+    
+    <style>
+    
+  </style>
+
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+  </head>
+  <body>
+    <main>
+      <div class="advice-box">
+        <div class="advice-box__inner">
+          <div class="advice-box__content">
+            <span class="advice-box__number" id="advice-number">
+              <!-- ADVICE #117 -->
+            </span>
+            <p class="advice-box__text" id="advice-text">
+              <div class="spinner" id="spinner"></div>
+            </p>
+          </div>
+          <!-- dividers -->
+          <div class="divider image-divider hide-on-mobile">
+            <img src="./assets/images/pattern-divider-desktop.svg" />
+          </div>
+          <div class="divider image-divider hide-on-desktop">
+            <img src="./assets/images/pattern-divider-mobile.svg" />
+          </div>
+
+          <button class="advice-box__btn" id="advice-btn" type="button">
+            <span class="icon-dice color-white"></span>
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <p class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="https://github.com/kouroshking">Kourosh Damercheli</a>.
+      </p>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
