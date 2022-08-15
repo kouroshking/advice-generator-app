@@ -12,7 +12,10 @@ const adviceNumber = document.getElementById("advice-number");
 
 const getRandomAdvice = async () => {
   try {
-    const { data } = await axios.get(apiURL);
+    const response = await fetch(apiURL, {
+      cache: "no-cache",
+    });
+    const data = await response.json();
 
     return data?.slip;
   } catch (error) {
